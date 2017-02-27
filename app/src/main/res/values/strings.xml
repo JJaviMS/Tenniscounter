@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tennis counter</string>
+    <string name="playerA">Name of the local player</string>
+    <string name="playerB">Name of the visitor player</string>
+    <string name="set">Number of sets</string>
+    <string name="start">Start!</string>
+</resources>
