@@ -12,12 +12,14 @@
         android:layout_height="wrap_content"
         android:hint="@string/playerA"
         android:inputType="textCapWords"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:id="@+id/localPlayer"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/playerB"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:id="@+id/visitorPlayer"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +28,8 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
         <RadioButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -66,6 +69,7 @@
         android:layout_height="wrap_content"
         android:text="@string/start"
         android:layout_gravity="center"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginBottom="5dp"
+        android:id="@+id/button"/>
 
 </LinearLayout>
