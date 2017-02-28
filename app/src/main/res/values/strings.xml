@@ -4,4 +4,6 @@
     <string name="playerB">Name of the visitor player</string>
     <string name="set">Number of sets</string>
     <string name="start">Start!</string>
+    <string name="counterA">Local Player</string>
+    <string name="counterB">Visitor Player</string>
 </resources>
