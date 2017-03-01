@@ -6,4 +6,7 @@
     <string name="start">Start!</string>
     <string name="counterA">Local Player</string>
     <string name="counterB">Visitor Player</string>
+    <string name="wonSet">Sets wom</string>
+    <string name="actualPoints">Actual points</string>
+    <string name="score">Score!</string>
 </resources>
