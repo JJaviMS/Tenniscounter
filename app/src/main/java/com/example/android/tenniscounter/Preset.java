@@ -31,9 +31,9 @@ public class Preset extends AppCompatActivity {
                 switch (radioChecked){
                     case R.id.set1 : sets = 1;
                             break;
-                    case R.id.set3 : sets = 3;
+                    case R.id.set3 : sets = 2;
                             break;
-                    case R.id.set5 : sets = 5;
+                    case R.id.set5 : sets = 3;
                         break;
                     default: sets = 1;
                 }

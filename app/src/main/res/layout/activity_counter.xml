@@ -81,7 +81,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/score"
-                android:onClick="scoreA"/>
+                android:onClick="scoreA"
+                android:id="@+id/scoreForA"/>
 
 
         </LinearLayout>
@@ -155,7 +156,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/score"
-                android:onClick="scoreB"/>
+                android:onClick="scoreB"
+                android:id="@+id/scoreForB"/>
 
         </LinearLayout>
 
