@@ -11,6 +11,8 @@ public class Counter extends AppCompatActivity {
     int numberOfsets;
     int playerAset= 0;
     int playerBset = 0;
+    int playerAgames = 0;
+    int playerBgames = 0;
 
 
 
@@ -68,16 +70,29 @@ public class Counter extends AppCompatActivity {
         TextView setB = (TextView) findViewById(R.id.actualBSets);
         setB.setText(String.valueOf(sets));
     }
+    public void displayAgame (int games){
+        TextView gamesA = (TextView) findViewById(R.id.gamesA);
+        gamesA.setText(String.valueOf(playerAgames));
+    }
+    public void displayBgame (int games){
+        TextView gamesA = (TextView) findViewById(R.id.gamesB);
+        gamesA.setText(String.valueOf(playerBgames));
+    }
     public void reset (View view) {
-         playerAset= 0;
-         playerBset = 0;
-         playerAscore = 0;
-         playerBscore = 0;
+        playerAset= 0;
+        playerBset = 0;
+        playerAscore = 0;
+        playerBscore = 0;
+        playerAgames = 0;
+        playerBgames = 0;
         displayA(playerAscore);
         displayAset(playerAset);
         displayB(playerBscore);
         displayBset(playerBset);
+        displayAgame(playerAgames);
+        displayBgame(playerBgames);
     }
+
 
 
 

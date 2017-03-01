@@ -10,4 +10,5 @@
     <string name="actualPoints">Actual points</string>
     <string name="score">Score!</string>
     <string name="reset">Reset</string>
+    <string name="actualGames">Actual games</string>
 </resources>
