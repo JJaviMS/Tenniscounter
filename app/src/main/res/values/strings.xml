@@ -9,4 +9,5 @@
     <string name="wonSet">Sets wom</string>
     <string name="actualPoints">Actual points</string>
     <string name="score">Score!</string>
+    <string name="reset">Reset</string>
 </resources>

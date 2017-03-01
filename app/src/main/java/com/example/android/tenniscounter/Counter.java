@@ -20,9 +20,7 @@ public class Counter extends AppCompatActivity {
         nameLocal.setText(s);
         if(!q.equals(new String()))
         nameVisitor.setText(q);
-
-
-
-
+        int playerAscore = 0;
+        int playerBscore = 0;
     }
 }

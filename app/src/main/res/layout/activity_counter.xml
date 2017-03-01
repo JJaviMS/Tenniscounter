@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_counter"
     android:layout_width="match_parent"
@@ -7,120 +7,134 @@
     tools:context="com.example.android.tenniscounter.Counter"
     android:orientation="horizontal">
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/counterNameA"
-            android:text="@string/counterA"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textColor="#616161"
-            android:fontFamily="sans-serif-medium"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/wonSet"
-            android:gravity="center"
-            android:textColor="#616161"
-            android:fontFamily="sans-serif-medium"
-            android:textSize="14sp"
-            android:id="@+id/actualASets"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:gravity="center"
-            android:textSize="56sp"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="#616161"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/actualPoints"
-            android:gravity="center"
-            android:textColor="#616161"
-            android:fontFamily="sans-serif-medium"
-            android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
 
-            />
-        <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="0"
-            android:gravity="center"
-            android:textSize="32sp"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="#616161"
-            android:id="@+id/actualAPoints"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/score"/>
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/counterNameA"
+                android:text="@string/counterA"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wonSet"
+                android:gravity="center"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="14sp"
+                android:id="@+id/actualASets"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="56sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#616161"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/actualPoints"
+                android:gravity="center"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="14sp"
 
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#616161"
+                android:id="@+id/actualAPoints"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/score"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/counterNameB"
+                android:text="@string/counterB"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wonSet"
+                android:gravity="center"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="14sp"
+                android:id="@+id/actualBSets"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="56sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#616161"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/actualPoints"
+                android:gravity="center"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="14sp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#616161"
+                android:id="@+id/actualBPoints"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/score"/>
+
+        </LinearLayout>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="0dp"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/counterNameB"
-            android:text="@string/counterB"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textColor="#616161"
-            android:fontFamily="sans-serif-medium"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/wonSet"
-            android:gravity="center"
-            android:textColor="#616161"
-            android:fontFamily="sans-serif-medium"
-            android:textSize="14sp"
-            android:id="@+id/actualBSets"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:gravity="center"
-            android:textSize="56sp"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="#616161"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/actualPoints"
-            android:gravity="center"
-            android:textColor="#616161"
-            android:fontFamily="sans-serif-medium"
-            android:textSize="14sp"
-
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:gravity="center"
-            android:textSize="32sp"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="#616161"
-            android:id="@+id/actualBPoints"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/score"/>
-
-    </LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="@string/reset"/>
 
 
-</LinearLayout>
+
+
+</RelativeLayout>
