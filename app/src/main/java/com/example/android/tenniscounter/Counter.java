@@ -39,12 +39,20 @@ public class Counter extends AppCompatActivity {
         TextView scoreA = (TextView) findViewById(R.id.actualAPoints);
         if (score == 0)
             scoreA.setText("0");
-        else if (score == 1)
+        if (score == 1)
             scoreA.setText("15");
-        else if (score == 2)
+        if (score == 2)
             scoreA.setText("30");
-        else
+        if (score ==3)
             scoreA.setText("40");
+        if (score==4 && playerBscore<4){
+            playerAscore = 0;
+            playerBscore = 0;
+            playerAgames = playerAgames + 1;
+            displayAgame(playerAgames);
+            scoreA.setText("0");
+            displayA(0);
+        }
     }
     public void displayAset (int sets) {
         TextView setA = (TextView) findViewById(R.id.actualASets);
@@ -59,12 +67,19 @@ public class Counter extends AppCompatActivity {
         TextView scoreB = (TextView) findViewById(R.id.actualBPoints);
         if (score == 0)
             scoreB.setText("0");
-        else if (score == 1)
+        if (score == 1)
             scoreB.setText("15");
-        else if (score == 2)
+        if (score == 2)
             scoreB.setText("30");
-        else
+        if (score ==3)
             scoreB.setText("40");
+        if (score==4 && playerAscore<4){
+            playerAscore = 0;
+            playerBscore = 0;
+            playerBgames = playerBgames + 1;
+            displayBgame(playerBgames);
+            scoreB.setText("0");
+            displayA(0);}
     }
     public void displayBset (int sets){
         TextView setB = (TextView) findViewById(R.id.actualBSets);
@@ -72,11 +87,11 @@ public class Counter extends AppCompatActivity {
     }
     public void displayAgame (int games){
         TextView gamesA = (TextView) findViewById(R.id.gamesA);
-        gamesA.setText(String.valueOf(playerAgames));
+        gamesA.setText(String.valueOf(games));
     }
     public void displayBgame (int games){
         TextView gamesA = (TextView) findViewById(R.id.gamesB);
-        gamesA.setText(String.valueOf(playerBgames));
+        gamesA.setText(String.valueOf(games));
     }
     public void reset (View view) {
         playerAset= 0;
@@ -92,7 +107,11 @@ public class Counter extends AppCompatActivity {
         displayAgame(playerAgames);
         displayBgame(playerBgames);
     }
+    private void gamePointA (){
+        if (playerAscore>playerBscore){
 
+        }
+    }
 
 
 
