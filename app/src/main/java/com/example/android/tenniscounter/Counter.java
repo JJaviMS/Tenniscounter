@@ -9,7 +9,7 @@ public class Counter extends AppCompatActivity {
     int playerAscore = 0;
     int playerBscore = 0;
     int numberOfsets;
-    int playerAset=0;
+    int playerAset= 0;
     int playerBset = 0;
 
 
@@ -44,6 +44,11 @@ public class Counter extends AppCompatActivity {
         else
             scoreA.setText("40");
     }
+    public void displayAset (int sets) {
+        TextView setA = (TextView) findViewById(R.id.actualASets);
+        setA.setText(String.valueOf(sets));
+    }
+
     public void scoreB (View view){
         playerBscore++;
         displayB(playerBscore);
@@ -59,6 +64,21 @@ public class Counter extends AppCompatActivity {
         else
             scoreB.setText("40");
     }
+    public void displayBset (int sets){
+        TextView setB = (TextView) findViewById(R.id.actualBSets);
+        setB.setText(String.valueOf(sets));
+    }
+    public void reset (View view) {
+         playerAset= 0;
+         playerBset = 0;
+         playerAscore = 0;
+         playerBscore = 0;
+        displayA(playerAscore);
+        displayAset(playerAset);
+        displayB(playerBscore);
+        displayBset(playerBset);
+    }
+
 
 
 
