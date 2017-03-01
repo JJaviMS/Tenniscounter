@@ -59,12 +59,14 @@
                 android:textSize="32sp"
                 android:fontFamily="sans-serif-medium"
                 android:textColor="#616161"
-                android:id="@+id/actualAPoints"/>
+                android:id="@+id/actualAPoints"
+                />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/score"/>
+                android:text="@string/score"
+                android:onClick="scoreA"/>
 
 
         </LinearLayout>
@@ -122,7 +124,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/score"/>
+                android:text="@string/score"
+                android:onClick="scoreB"/>
 
         </LinearLayout>
 
