@@ -198,7 +198,7 @@ public class Counter extends AppCompatActivity {
     private void playerBwon () {
         Context context = getApplicationContext();
         CharSequence text = "Player " + getIntent().getStringExtra("nameB") + " won the game !";
-        int duration = Toast.LENGTH_SHORT;
+        int duration = Toast.LENGTH_LONG;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
