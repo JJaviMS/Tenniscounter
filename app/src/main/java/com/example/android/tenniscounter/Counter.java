@@ -24,8 +24,10 @@ public class Counter extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counter);
-        String s = getIntent().getStringExtra("nameA");
-        String q = getIntent().getStringExtra("nameB");
+        String s = "Local player";
+        String q = "Visitor player";
+         s = getIntent().getStringExtra("nameA");
+         q = getIntent().getStringExtra("nameB");
         numberOfsets = getIntent().getIntExtra("numberOfSets",1);
         TextView nameLocal = (TextView) findViewById(R.id.counterNameA);
         TextView nameVisitor = (TextView) findViewById(R.id.counterNameB);
@@ -178,24 +180,12 @@ public class Counter extends AppCompatActivity {
         gamesA.setText(String.valueOf(games));
     }
     public void reset (View view) {
-       /* playerAset= 0;
-        playerBset = 0;
-        playerAscore = 0;
-        playerBscore = 0;
-        playerAgames = 0;
-        playerBgames = 0;
-        displayA(playerAscore);
-        displayAset(playerAset);
-        displayB(playerBscore);
-        displayBset(playerBset);
-        displayAgame(playerAgames);
-        displayBgame(playerBgames);*/
         finish();
     }
     private void playerAwon () {
         Context context = getApplicationContext();
-        CharSequence text = "Player" + getIntent().getStringExtra("nameA") + "won the game !";
-        int duration = Toast.LENGTH_SHORT;
+        CharSequence text = "Player " + getIntent().getStringExtra("nameA") + "won the game !";
+        int duration = Toast.LENGTH_LONG;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
@@ -207,7 +197,7 @@ public class Counter extends AppCompatActivity {
 
     private void playerBwon () {
         Context context = getApplicationContext();
-        CharSequence text = "Player" + getIntent().getStringExtra("nameB") + "won the game !";
+        CharSequence text = "Player " + getIntent().getStringExtra("nameB") + "won the game !";
         int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context, text, duration);
