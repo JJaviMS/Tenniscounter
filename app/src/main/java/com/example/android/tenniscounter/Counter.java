@@ -13,6 +13,7 @@ public class Counter extends AppCompatActivity {
     int playerBset = 0;
     int playerAgames = 0;
     int playerBgames = 0;
+    boolean test = false;
 
 
 
@@ -45,14 +46,58 @@ public class Counter extends AppCompatActivity {
             scoreA.setText("30");
         if (score ==3)
             scoreA.setText("40");
-        if (score==4 && playerBscore<4){
-            playerAscore = 0;
-            playerBscore = 0;
-            playerAgames = playerAgames + 1;
-            displayAgame(playerAgames);
-            scoreA.setText("0");
-            displayA(0);
+        if (score ==4 && playerBscore<4&& !test){
+
+            playerAWonPointGame();
         }
+        if (score>=3 && playerBscore>=3){
+            test =true;
+            bothPointGame();
+        }
+
+    }
+    private void playerAWonPointGame (){
+        TextView scoreA = (TextView) findViewById(R.id.actualAPoints);
+        playerAscore = 0;
+        playerBscore = 0;
+        playerAgames = playerAgames + 1;
+        displayAgame(playerAgames);
+        scoreA.setText("0");
+        displayB(0);
+
+    }
+    private void playerBWonPointGame (){
+        TextView scoreB = (TextView) findViewById(R.id.actualBPoints);
+        playerAscore = 0;
+        playerBscore = 0;
+        playerBgames = playerBgames + 1;
+        displayBgame(playerBgames);
+        scoreB.setText("0");
+        displayA(0);
+    }
+    private void bothPointGame (){
+        TextView scoreA = (TextView) findViewById(R.id.actualAPoints);
+        TextView scoreB = (TextView) findViewById(R.id.actualBPoints);
+        if (playerAscore==playerBscore){
+            scoreA.setText("E");
+            scoreB.setText("E");
+        }
+        if (playerAscore>playerBscore && playerAscore - playerBscore==1){
+            scoreA.setText ("A");
+            scoreB.setText("D");
+        }
+        if (playerAscore>playerBscore&& playerAscore - playerBscore==2){
+            playerAWonPointGame();
+        }
+        if (playerAscore<playerBscore && playerBscore - playerAscore==1){
+            scoreB.setText ("A");
+            scoreA.setText("D");
+        }
+        if (playerAscore<playerBscore&& playerBscore - playerAscore==2){
+            playerBWonPointGame();
+        }
+
+
     }
     public void displayAset (int sets) {
         TextView setA = (TextView) findViewById(R.id.actualASets);
