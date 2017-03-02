@@ -37,6 +37,39 @@ public class Counter extends AppCompatActivity {
         nameVisitor.setText(q);
 
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("PlayerAscore",playerAscore);
+        outState.putInt("PlayerAset",playerAset);
+        outState.putInt("PlayerAgames",playerAgames);
+        outState.putInt("PlayerBscore",playerBscore);
+        outState.putInt("PlayerBgames",playerBgames);
+        outState.putInt("playerBset",playerBset);
+        outState.putBoolean("equals",equals);
+        outState.putInt("numberOfSets",numberOfsets);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        playerAscore =savedInstanceState.getInt("PlayerAscore");
+        playerAset = savedInstanceState.getInt("PlayerAset");
+        playerAgames = savedInstanceState.getInt("PlayerAgames");
+        playerBscore = savedInstanceState.getInt("PlayerBscore");
+        playerBgames = savedInstanceState.getInt("PlayerBgames");
+        playerBset = savedInstanceState.getInt("PlayerBset");
+        equals = savedInstanceState.getBoolean("equals");
+        numberOfsets = savedInstanceState.getInt("numberOfSets");
+        displayA(playerAscore);
+        displayB(playerBscore);
+        displayAset(playerAset);
+        displayBset(playerBset);
+        displayAgame(playerAgames);
+        displayBgame(playerBgames);
+    }
+
     public void scoreA (View view){
         playerAscore++;
         displayA(playerAscore);
