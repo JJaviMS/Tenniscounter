@@ -29,17 +29,17 @@
         <RadioButton
             style="@style/radioButton"
             android:id="@+id/set1"
-            android:text="1"
+            android:text="@string/a1"
 
             />
         <RadioButton
             style="@style/radioButton"
-            android:text="3"
+            android:text="@string/a1"
             android:id="@+id/set3"
             />
         <RadioButton
             style="@style/radioButton"
-            android:text="5"
+            android:text="@string/a5"
             android:id="@+id/set5"
             />
     </RadioGroup>
