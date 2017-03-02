@@ -28,37 +28,20 @@
                 android:text="0"
                 android:id="@+id/actualASets"/>
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/smallText"
                 android:text="@string/actualGames"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:gravity="center"
-                android:textSize="48sp"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:id="@+id/gamesA"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/actualPoints"
-                android:gravity="center"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:textSize="14sp"
-
                 />
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/numberOFgames"
                 android:text="0"
-                android:gravity="center"
-                android:textSize="32sp"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#616161"
+                android:id="@+id/gamesA"/>
+            <TextView
+                style="@style/smallText"
+                android:text="@string/actualPoints"
+                />
+            <TextView
+                style="@style/numberOFpoints"
+                android:text="0"
                 android:id="@+id/actualAPoints"
                 />
             <Button
@@ -89,37 +72,20 @@
                 android:text="0"
                 android:id="@+id/actualBSets"/>
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/smallText"
                 android:text="@string/actualGames"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:gravity="center"
-                android:textSize="48sp"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:id="@+id/gamesB"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/actualPoints"
-                android:gravity="center"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:textSize="14sp"
-
                 />
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/numberOFgames"
                 android:text="0"
-                android:gravity="center"
-                android:textSize="32sp"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#616161"
+                android:id="@+id/gamesB"/>
+            <TextView
+                style="@style/smallText"
+                android:text="@string/actualPoints"
+                />
+            <TextView
+                style="@style/numberOFpoints"
+                android:text="0"
                 android:id="@+id/actualBPoints"/>
             <Button
                 android:layout_width="wrap_content"
