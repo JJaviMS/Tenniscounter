@@ -11,4 +11,8 @@
     <string name="score">Score!</string>
     <string name="reset">Reset</string>
     <string name="actualGames">Actual games</string>
+    <string name="a0">0</string>
+    <string name="a1">1</string>
+    <string name="a3">3</string>
+    <string name="a5">5</string>
 </resources>

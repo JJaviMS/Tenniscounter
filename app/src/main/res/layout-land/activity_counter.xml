@@ -6,178 +6,105 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.tenniscounter.Counter">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context="com.example.android.tenniscounter.Counter"
-    android:orientation="horizontal">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:baselineAligned="false">
+        tools:context="com.example.android.tenniscounter.Counter"
+        android:orientation="horizontal">
         <LinearLayout
-
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/counterNameA"
-                android:text="@string/counterA"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/wonSet"
-                android:gravity="center"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:textSize="14sp"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:gravity="center"
-                android:textSize="56sp"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#616161"
-                android:id="@+id/actualASets"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/actualGames"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:gravity="center"
-                android:textSize="48sp"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:id="@+id/gamesA"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/actualPoints"
-                android:gravity="center"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:textSize="14sp"
+            android:baselineAligned="false">
+            <LinearLayout
 
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:gravity="center"
-                android:textSize="32sp"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#616161"
-                android:id="@+id/actualAPoints"
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/score"
-                android:onClick="scoreA"
-                android:id="@+id/scoreForA"/>
+                style="@style/linearLayouts">
+                <TextView
+                    style="@style/playerText"
+                    android:id="@+id/counterNameA"
+                    android:text="@string/counterA"/>
+                <TextView
+                    style="@style/setText"
+                    android:text="@string/wonSet"
+                    />
+                <TextView
+                    style="@style/numberOfsetsText.Text"
+                    android:id="@+id/actualASets"/>
+                <TextView
+                    style="@style/smallText"
+                    android:text="@string/actualGames"
+                    />
+                <TextView
+                    style="@style/numberOFgames"
+                    android:text="@string/a0"
+                    android:id="@+id/gamesA"/>
+                <TextView
+                    style="@style/smallText"
+                    android:text="@string/actualPoints"
+                    />
+                <TextView
+                    style="@style/numberOFpoints"
+                    android:text="@string/a0"
+                    android:id="@+id/actualAPoints"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/score"
+                    android:onClick="scoreA"
+                    android:id="@+id/scoreForA"/>
 
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/linearLayouts">
+                <TextView
+                    style="@style/playerText"
+                    android:id="@+id/counterNameB"
+                    android:text="@string/counterB" />
+                <TextView
+                    style="@style/setText"
+                    android:text="@string/wonSet"
+                    />
+                <TextView
+                    style="@style/numberOfsetsText.Text"
+                    android:id="@+id/actualBSets"/>
+                <TextView
+                    style="@style/smallText"
+                    android:text="@string/actualGames"
+                    />
+                <TextView
+                    style="@style/numberOFgames"
+                    android:id="@+id/gamesB"/>
+                <TextView
+                    style="@style/smallText"
+                    android:text="@string/actualPoints"
+                    />
+                <TextView
+                    style="@style/numberOFpoints"
+                    android:id="@+id/actualBPoints"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/score"
+                    android:onClick="scoreB"
+                    android:id="@+id/scoreForB"/>
+
+            </LinearLayout>
 
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/counterNameB"
-                android:text="@string/counterB"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/wonSet"
-                android:gravity="center"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:textSize="14sp"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:gravity="center"
-                android:textSize="56sp"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#616161"
-                android:id="@+id/actualBSets"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/actualGames"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:gravity="center"
-                android:textSize="48sp"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:id="@+id/gamesB"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/actualPoints"
-                android:gravity="center"
-                android:textColor="#616161"
-                android:fontFamily="sans-serif-medium"
-                android:textSize="14sp"
-
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:gravity="center"
-                android:textSize="32sp"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#616161"
-                android:id="@+id/actualBPoints"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/score"
-                android:onClick="scoreB"
-                android:id="@+id/scoreForB"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:text="@string/reset"
-        android:onClick="reset"/>
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:text="@string/reset"
+            android:onClick="reset"/>
 
 
 
 
-</RelativeLayout>
+    </RelativeLayout>
+
 </ScrollView>

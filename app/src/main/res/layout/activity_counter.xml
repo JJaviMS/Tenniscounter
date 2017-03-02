@@ -8,13 +8,11 @@
     android:orientation="horizontal">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
         <LinearLayout
 
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            style="@style/linearLayouts">
             <TextView
                 style="@style/playerText"
                 android:id="@+id/counterNameA"
@@ -25,7 +23,6 @@
                 />
             <TextView
                 style="@style/numberOfsetsText.Text"
-                android:text="0"
                 android:id="@+id/actualASets"/>
             <TextView
                 style="@style/smallText"
@@ -33,7 +30,7 @@
                 />
             <TextView
                 style="@style/numberOFgames"
-                android:text="0"
+                android:text="@string/a0"
                 android:id="@+id/gamesA"/>
             <TextView
                 style="@style/smallText"
@@ -41,7 +38,7 @@
                 />
             <TextView
                 style="@style/numberOFpoints"
-                android:text="0"
+                android:text="@string/a0"
                 android:id="@+id/actualAPoints"
                 />
             <Button
@@ -55,10 +52,7 @@
 
         </LinearLayout>
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            style="@style/linearLayouts">
             <TextView
                 style="@style/playerText"
                 android:id="@+id/counterNameB"
@@ -69,7 +63,6 @@
                 />
             <TextView
                 style="@style/numberOfsetsText.Text"
-                android:text="0"
                 android:id="@+id/actualBSets"/>
             <TextView
                 style="@style/smallText"
@@ -77,7 +70,6 @@
                 />
             <TextView
                 style="@style/numberOFgames"
-                android:text="0"
                 android:id="@+id/gamesB"/>
             <TextView
                 style="@style/smallText"
@@ -85,7 +77,6 @@
                 />
             <TextView
                 style="@style/numberOFpoints"
-                android:text="0"
                 android:id="@+id/actualBPoints"/>
             <Button
                 android:layout_width="wrap_content"

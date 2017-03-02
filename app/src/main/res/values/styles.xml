@@ -66,6 +66,7 @@
          <item name="android:textSize">56sp</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:text">@string/a0</item>
     </style>
     <style name="smallText">
         <item name="android:layout_height">wrap_content</item>
@@ -82,6 +83,7 @@
         <item name="android:textSize">48sp</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:text">@string/a0</item>
     </style>
     <style name="numberOFpoints">
         <item name="android:layout_height">wrap_content</item>
@@ -90,6 +92,13 @@
         <item name="android:textSize">32sp</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:text">@string/a0</item>
+    </style>
+    <style name="linearLayouts">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
     </style>
 
 
