@@ -34,7 +34,7 @@
             />
         <RadioButton
             style="@style/radioButton"
-            android:text="@string/a1"
+            android:text="@string/a3"
             android:id="@+id/set3"
             />
         <RadioButton
